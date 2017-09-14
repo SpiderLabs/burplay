@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burplay Help</title>
+
+</head>
+<body>
+<h1>Burplay</h1>
+<p>Burplay is a Burp Extension allowing for replaying any number of requests using same modifications definition.
+    Its main purpose is to aid in searching for Privilege Escalation issues.
+</p>
+<hr>
+<h2>Request List</h2>
+<p>
+   Add requests to Burplay from Proxy -&gt; HTTP History or Target -&gt; Site map -&gt;Contents table by choosing "Send to Replay" from the context menu.
+</p>
+<hr>
+<h2>Modifications</h2>
+    <p>
+        Define any number of modifications by adding them to the modifications table.
+        They will be applied to the base requests ("Original" tab).<br/>
+        Four types of modifications are available:
+<ul>
+    <li>Header</li>
+    <li>Cookie</li>
+    <li>GET</li>
+    <li>POST</li>
+</ul>
+    For each modification, if no Header/Cookie/parameter exists in the base request, it will be added, otherwise modified.
+</p>
+<hr>
+    <h2>Sessions</h2>
+        <p>You can define a Burplay session in any Request/Response Editor within Burp by selecting text
+            (typically "SESSIONID=sessionid") and choosing "Define Burplay session" from the context menu.</p><br/>
+
+
+        <img src="define_session.png" border="0">
+
+<p>The session will be added to the Sessions table and can be applied as a modification with "Apply" button.<br/>
+Only cookie-based session identifiers are currently supported.
+</p>
+<hr>
+    <h2>Details</h2>
+    <p>Details tabs on the right hand side show the original set of requests (base requests) and each replay round
+    in numbered tabs. You can compare responses manually or use Burp Comparer.
+    </p>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+- min width for right panel
+- handle burp connection problems (FIXED?)
+- add manual session definition
+- reset modifications
+- max width for session define dialog box
+- allow for defining a regex triggering priv escalation alert
+- multi-threading
+
+
